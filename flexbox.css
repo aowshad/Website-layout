@@ -1,0 +1,37 @@
+.container{
+display: flex;
+border: 2px dotted black;
+justify-content: space-evenly;
+height: 500px;
+align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    font: size 3em; 
+    border: 2px dashed rgb(13, 136, 252);
+    text-align: center;
+    
+}
+.container2{
+    display: flex;
+    border: 2px dotted black;
+    height: 500px;
+    align-items: stretch;
+    }
+
+    .boxa{
+        width: 200px;
+        font: size 3em; 
+        border: 2px dashed rgb(13, 136, 252);
+        text-align: center;
+        
+    }
+    #box2{
+        flex-grow: 1;
+        order: 1;
+    }
+    #box1{
+        order: 2;
+    }
