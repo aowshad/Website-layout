@@ -1,0 +1,46 @@
+.photo-frame{
+    width: 300px;
+    height: 275px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.photo img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.photo-detail{
+    display: none;
+    position:absolute;
+    width: 300px;
+    top: 0;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;   
+    
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.575);
+    cursor: pointer;
+}
+.photo-detail h3{
+    color: orange;
+}
+.photo-detail p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;   
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-frame:hover .photo{
+transform:scale(1.2) rotate(90deg) ;
+transition: transform 2s ease-out;
+}
